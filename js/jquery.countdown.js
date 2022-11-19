@@ -7,6 +7,7 @@ var defaultOptions = {
     return;
   },
   render: function (date) {
+ /*  <!-- change html year date hours and time view comments by ram--> */
   this.el.innerHTML =  date.years + "years," +
                         date.days  + " days, " +
                         this.leadingZeros(date.hours) + " hours, " +
