@@ -1,0 +1,71 @@
+html,body{
+/* <!--add background image file name and path here comments by ram--> */
+    background:url('../img/bg.jpg') center center no-repeat;
+    height: 100%;
+    background-size:cover;
+
+/* <!--add media  here comments by ram--> */
+
+    @media(max-width:768px) {
+        #logo img {
+        width:50%;
+        }
+        #counter .countdown {
+            font-size:1.4em !important;
+        }
+        #logo .fa {
+            margin:0px 0 0 !important;
+            font-size:2em
+        }
+    }
+     @media(min-width:412px)
+     and(max-width:915px) {
+
+            #logo img {
+               width:20%;
+
+
+            }
+
+     }
+}
+/* <!--logo css here comments by ram--> */
+ #logo img{
+         padding-top:10px;
+          height: 0%;
+          img-align:center;
+    }
+
+/* <!--main paragraph css here comments by ram--> */
+
+    #intro p{
+    color:white;
+    text-align:center;
+            font-family: 'Audiowide', cursive;
+            font-size:1.1em;
+    }
+
+/* <!--countdown css here comments by ram--> */
+
+    #counter .countdown {
+        color:white;
+            text-align:center;
+                    font-family: 'Audiowide', cursive;
+                    margin:-15px 0 0;
+                     font-size:1.1em;
+    }
+/* <!--signup css here comments by ram--> */
+
+    #signup {
+        text-align: center;
+    }
+    #signup .mb-3{
+        display: block;
+    }
+    #signup .btn{
+        background-color: rgba(161,186,226,0.5);
+        color: white;
+    }
+    #signup .btn:hover{
+        background-color:rgba(37,165,82,1);
+    }
