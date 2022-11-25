@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord Webhook</title>
+</head>
+<body>
+<button onclick="sendMessage()">Send</button>
+</body>
+<!--sending-discord-webhook-send button comments by ram--->
+<script>
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1045762855280062604/8d0cMheTQn-c5MQO0hQ32FeEQqh7eqd_wK9luTH9NPgK_tAMBxhOkyPhFUBZENCU6-6M");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "ramhooks",
+        avatar_url: "",
+        content: "webhook button click"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+</html>
